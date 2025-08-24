@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo">hell, please change my color</h1>
+
+    <button id="red-btn">Red</button>
+    <button id="green-btn">Green</button>
+    <button id="blue-btn">Blue</button>
+  </body>
+
+  <script>
+    const red_btn = document.getElementById("red-btn");
+    const green_btn = document.getElementById("green-btn");
+    const blue_btn = document.getElementById("blue-btn");
+
+    red_btn.addEventListener("click", () => {
+      document.getElementById("demo").style.color = "red";
+    });
+
+    green_btn.addEventListener("click", () => {
+      document.getElementById("demo").style.color = "green";
+    });
+
+    blue_btn.addEventListener("click", () => {
+      document.getElementById("demo").style.color = "blue";
+    });
+  </script>
+</html>
